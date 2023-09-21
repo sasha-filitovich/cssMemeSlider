@@ -1,0 +1,121 @@
+h1 {
+  text-align: center;
+}
+
+.slider {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  display: flex;
+}
+
+input {
+  display: none;
+}
+
+.slide {
+  min-width: 20%;
+  transition: all 0.5s;
+}
+
+.slide img {
+  max-height: 77vh;
+  display: block;
+  margin: 0 auto;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 31.5rem;
+  overflow: hidden;
+}
+
+.titles {
+  width: 500%;
+  display: flex;
+}
+
+.titles div {
+  width: 20%;
+  transition: all 0.5s;
+}
+
+p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.nav {
+  display: flex;
+  gap: 3px;
+}
+
+.nav__label {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: aqua;
+  border-radius: 50%;
+  border:10px solid white;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+.nav__label:hover {
+  background-color: rgb(47, 255, 220);
+}
+
+#img1:checked ~ .slides .s1 {
+  margin-left: 0;
+}
+
+#img2:checked ~ .slides .s1 {
+  margin-left: -20%;
+}
+
+#img3:checked ~ .slides .s1 {
+  margin-left: -40%;
+}
+
+#img4:checked ~ .slides .s1 {
+  margin-left: -60%;
+}
+
+#img5:checked ~ .slides .s1 {
+  margin-left: -80%;
+}
+
+#img1:checked ~ .control .nav .label1,
+#img2:checked ~ .control .nav .label2,
+#img3:checked ~ .control .nav .label3,
+#img4:checked ~ .control .nav .label4,
+#img5:checked ~ .control .nav .label5 {
+  background-color: rgb(0, 158, 182);
+}
+
+#img1:checked ~ .control .box .titles .s1 {
+  margin-left: 0;
+}
+
+#img2:checked ~ .control .box .titles .s1 {
+  margin-left: -20%;
+}
+
+#img3:checked ~ .control .box .titles .s1 {
+  margin-left: -40%;
+}
+
+#img4:checked ~ .control .box .titles .s1 {
+  margin-left: -60%;
+}
+
+#img5:checked ~ .control .box .titles .s1 {
+  margin-left: -80%;
+}
