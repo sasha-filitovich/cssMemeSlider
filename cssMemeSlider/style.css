@@ -18,12 +18,14 @@ input {
 }
 
 .slide {
-  min-width: 20%;
+  width: 20%;
   transition: all 0.5s;
 }
 
 .slide img {
   max-height: 77vh;
+  width: 100%;
+  object-fit: contain;
   display: block;
   margin: 0 auto;
 }
@@ -72,6 +74,10 @@ p {
   background-color: rgb(47, 255, 220);
 }
 
+.nav__label:active {
+  background-color: bisque;
+}
+
 #img1:checked ~ .slides .s1 {
   margin-left: 0;
 }
@@ -118,4 +124,16 @@ p {
 
 #img5:checked ~ .control .box .titles .s1 {
   margin-left: -80%;
+}
+
+@media (max-width: 600px) {
+  .control {
+    flex-direction: column-reverse;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav {
+    margin: 0 auto;
+  }
 }
